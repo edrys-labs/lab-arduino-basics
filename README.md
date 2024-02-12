@@ -11,8 +11,8 @@ https://github.com/edrys-labs/lab-arduino-basics/assets/3089101/3428fcc9-ce3e-4f
 
 ## Arduino Blink
 
-[`https://raw.githubusercontent.com/edrys-labs/lab-arduino-basics/main/arduino-blink.yaml`](https://raw.githubusercontent.com/edrys-labs/lab-arduino-basics/main/arduino-blink.yaml)
+[`https://raw.githubusercontent.com/edrys-labs/laboratory-arduino-basics/main/arduino-blink.yaml`](https://raw.githubusercontent.com/edrys-labs/laboratory-arduino-basics/main/arduino-blink.yaml)
 
 and as blockly ...
 
-[`https://raw.githubusercontent.com/edrys-labs/lab-arduino-basics/main/blockduino-blink.yaml`](https://raw.githubusercontent.com/edrys-labs/lab-arduino-basics/main/blockduino-blink.yaml)
+[`https://raw.githubusercontent.com/edrys-labs/laboratory-arduino-basics/main/blockduino-blink.yaml`](https://raw.githubusercontent.com/edrys-labs/laboratory-arduino-basics/main/blockduino-blink.yaml)

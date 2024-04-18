@@ -1,0 +1,58 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable type="int" id="$ZB$NliN(6/TlP+weZmU">state</variable>
+  </variables>
+  <block type="board_serial_init" id="1f5ivO{RV5{Wc%aQ,,K@" x="63" y="38">
+    <field name="SPEED">9600</field>
+    <next>
+      <block type="controls_if" id="=]Ls|6A6o/+qQnOwY;UJ">
+        <value name="IF0">
+          <block type="board_serial_available" id="P4xP4wa_*4A_x@t~_6oj"></block>
+        </value>
+        <statement name="DO0">
+          <block type="vars_set_int" id="E=/_Q,tw=VrW1(V`PxUX">
+            <field name="VAR_SET_INT" id="$ZB$NliN(6/TlP+weZmU" variabletype="int">state</field>
+            <value name="VALUE">
+              <block type="math_arithmetic" id="ml)O]o_m9T?En,hnDL81">
+                <field name="OP">MINUS</field>
+                <value name="A">
+                  <shadow type="math_number" id="|M)gL3bd!YECHKm-YTDB">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="board_serial_read" id="6yRRk@X)`j$KmibEuGQ|"></block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number" id="_S[Kft5[K($/rg`{KRO.">
+                    <field name="NUM">48</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="board_base_inout_analog_write" id="YD^?W@JlJ01G)}q3:l4}">
+                <field name="PIN">13</field>
+                <value name="PWM">
+                  <shadow type="math_number" id="yr@){DQjTLovfQ@.L}TO">
+                    <field name="NUM">0</field>
+                  </shadow>
+                  <block type="vars_get_int" id="qLJRB{Z`N^hHU[OrWTN`">
+                    <field name="VAR_GET_INT" id="$ZB$NliN(6/TlP+weZmU" variabletype="int">state</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="board_base_delay" id="*Du/Eqix],.|{Tt@uX.-">
+                    <value name="DELAY_TIME">
+                      <shadow type="math_number" id="-Ka#_kE{YU6S?^Ce0JkK">
+                        <field name="NUM">1000</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+</xml>

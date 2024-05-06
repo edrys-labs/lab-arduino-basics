@@ -28,6 +28,8 @@ Otherwise, you can install the server locally by following the instructions in t
 
 To reuse this lab import it as a new lab-configuration by copying the following URL into the import dialog of the lab-configuration or download it, change it and upload it to your lab:
 
+[<img src="https://img.shields.io/badge/%F0%9F%9A%80%20-%20Deploy%20Lab%20-%20light?style=plastic" height="25" />](https://edrys-labs.github.io/?/deploy/https://raw.githubusercontent.com/edrys-labs/lab-arduino-basics/main/laboratory/arduino.yaml)
+
 https://raw.githubusercontent.com/edrys-labs/lab-arduino-basics/main/laboratory/arduino.yaml
 
 https://raw.githubusercontent.com/edrys-labs/lab-arduino-basics/main/laboratory/arduino.json
@@ -36,6 +38,8 @@ https://raw.githubusercontent.com/edrys-labs/lab-arduino-basics/main/laboratory/
 
 and as blockly ... load as above ;-)
 
+[<img src="https://img.shields.io/badge/%F0%9F%9A%80%20-%20Deploy%20Lab%20-%20light?style=plastic" height="25" />](https://edrys-labs.github.io/?/deploy/https://raw.githubusercontent.com/edrys-labs/lab-arduino-basics/main/laboratory/blockduino.yaml)
+
 https://raw.githubusercontent.com/edrys-labs/lab-arduino-basics/main/laboratory/blockduino.yaml
 
 https://raw.githubusercontent.com/edrys-labs/lab-arduino-basics/main/laboratory/blockduino.json
@@ -43,6 +47,8 @@ https://raw.githubusercontent.com/edrys-labs/lab-arduino-basics/main/laboratory/
 ## Demo
 
 This is a demo of a follow-up laboratory that is based on the Arduino-configuration:
+
+[<img src="https://img.shields.io/badge/%F0%9F%9A%80%20-%20Deploy%20Lab%20-%20light?style=plastic" height="25" />](https://edrys-labs.github.io/?/deploy/https://raw.githubusercontent.com/edrys-labs/lab-arduino-basics/main/lab.yaml)
 
 https://raw.githubusercontent.com/edrys-labs/lab-arduino-basics/main/lab.yaml
 

@@ -16,7 +16,7 @@
   },
   "modules": [
     {
-      "url": "https://cross-lab-project.github.io/edrys_module-markdown-it/index.html",
+      "url": "https://edrys-labs.github.io/module-markdown-it/index.html",
       "config": "### Introduction to Arduino and Physical Computing\n**What is Arduino?**\nArduino is a popular open-source platform used for building electronics projects. It consists of both a physical programmable circuit board (often referred to as a microcontroller) and a piece of software, or IDE (Integrated Development Environment), which runs on your computer. You use this software to write and upload computer code to the physical board.\n**What is Physical Computing?**\nPhysical computing involves designing and building interactive physical systems through the use of software and hardware that can sense and respond to the world around them. With Arduino, you can read inputs – light on a sensor, a finger on a button, or a Twitter message – and turn it into an output – activating a motor, turning on an LED, publishing something online. You can tell your board what to do by sending a set of instructions to the microcontroller on the board.\n",
       "studentConfig": "",
       "teacherConfig": "## Welcome for Teachers\n\n> This can be used as a base laboratory to create further and more elaborate labs with [edrys-Lite](https://edrys-labs.github.io).\n> You are currently in the Lobby. If there is a station available you can switch to it and try out the terminal.\n> Otherwise, if you are in teacher-mode you can share a lab by clicking onto `setting` >> `station` and then by clicking the presented link,\n> which is the same as the current link, but only with the word `station` instead of `classroom`.",
@@ -26,7 +26,7 @@
       "height": "huge"
     },
     {
-      "url": "https://cross-lab-project.github.io/edrys_module-editor/index.html",
+      "url": "https://edrys-labs.github.io/module-editor/index.html",
       "config": {
         "editorText": "/*\n  Blink\n\n  Turns an LED on for one second, then off for one second, repeatedly.\n\n  Most Arduinos have an on-board LED you can control. On the UNO, MEGA and ZERO\n  it is attached to digital pin 13, on MKR1000 on pin 6. LED_BUILTIN is set to\n  the correct LED pin independent of which board is used.\n  If you want to know what pin the on-board LED is connected to on your Arduino\n  model, check the Technical Specs of your board at:\n  https://www.arduino.cc/en/Main/Products\n\n  This example code is in the public domain.\n\n  https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink\n*/\n\n// the setup function runs once when you press reset or power the board\nvoid setup() {\n  // initialize digital pin LED_BUILTIN as an output.\n  pinMode(LED_BUILTIN, OUTPUT);\n\n  // initialize serial output\n  Serial.begin(9600);\n}\n\n// the loop function runs over and over again forever\nvoid loop() {\n  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)\n  Serial.println(\"LED HIGH\")\n  delay(1000);                       // wait for a second\n  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW\n  Serial.println(\"LED LOW\")\n  delay(1000);                       // wait for a second\n}\n",
         "runCommand": "execute",
@@ -38,7 +38,7 @@
       "height": "medium"
     },
     {
-      "url": "https://raw.githubusercontent.com/cross-lab-project/edrys_module-markdown-it/2.0.0/index.html",
+      "url": "https://raw.githubusercontent.com/edrys-labs/module-markdown-it/2.0.0/index.html",
       "config": "# Arduino Tutorial\n## Step 1: Your First Project - The Blinking LED\n\n**Objective**: To make an LED blink on and off every second.\n\n1. **Build the Circuit**:\n\n   - Plug your Arduino board into your breadboard.\n   - Connect an LED to pin 13 and a ground pin through a 220-ohm resistor (to protect the LED).\n\n2. **Program Your Arduino**:\n\n   - Open your Arduino IDE.\n   - Copy and paste the following code into the IDE:\n\n     ```cpp\n     void setup() {\n        pinMode(13, OUTPUT); // Set pin 13 as an OUTPUT\n     }\n\n     void loop() {\n       digitalWrite(13, HIGH);   // Turn the LED on\n       delay(1000);              // Wait for a second\n       digitalWrite(13, LOW);    // Turn the LED off\n       delay(1000);              // Wait for a second\n     }\n     ```\n  \n   - Click on the \"Run Code\" button to send your code to the Arduino.\n\n3. **See the Magic**: Once uploaded, the LED on your breadboard should start blinking.\n\n## Step 2: Adding Serial Communication\n\n**Objective**: To control the LED blinking with a command from your computer.\n\n1. **Modify Your Code**:\n\n    - Add the following lines to enable serial communication:\n\n       ```cpp\n       void setup() {\n         pinMode(13, OUTPUT);\n         Serial.begin(9600); // Start serial communication at 9600 bps\n       }\n\n       void loop() {\n         if (Serial.available() > 0) {\n           int state = Serial.read() - '0'; // Read the incoming byte and subtract '0' to get the integer value\n           digitalWrite(13, state);\n           delay(1000);\n         }\n       }\n       ```\n\n2. **Test Your Setup**:\n\n    - Open the Serial Monitor in the Arduino IDE.\n    - Type `1` to turn the LED on and `0` to turn it off.\n\n## Step 3: Introducing and Fixing a Compile Error\n\n**Objective**: To learn how to troubleshoot and fix errors in your code.\n\n1. **Introduce an Error**:\n\n    - Change `Serial.begin(9600);` to `Serial.beggin(9600);` and try to upload it.\n\n2. **Identify and Fix the Error**:\n\n    - The Arduino IDE will show an error message indicating that `Serial.beggin` is not a member of 'Serial'.\n    - Correct it to `Serial.begin(9600);` and re-upload the code.\n\n### Wrap-Up\nCongratulations! You have successfully completed the Arduino blink tutorial, mastered basic serial communication, and learned to troubleshoot a programming error. Now, you're ready to explore more complex projects and dive deeper into the world of physical computing!",
       "studentConfig": "",
       "teacherConfig": "",
@@ -48,7 +48,7 @@
       "height": "huge"
     },
     {
-      "url": "https://cross-lab-project.github.io/edrys_module-station-stream/index.html",
+      "url": "https://edrys-labs.github.io/module-station-stream/index.html",
       "stationConfig": {
         "video": true,
         "audio": false
@@ -58,7 +58,7 @@
       "height": "medium"
     },
     {
-      "url": "https://cross-lab-project.github.io/edrys_module-pyxtermjs/index.html",
+      "url": "https://edrys-labs.github.io/module-pyxtermjs/index.html",
       "stationConfig": {
         "server": "http://localhost:5000/pty",
         "execute": "execute",

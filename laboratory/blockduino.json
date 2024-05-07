@@ -16,7 +16,7 @@
   },
   "modules": [
     {
-      "url": "https://cross-lab-project.github.io/edrys_module-markdown-it/index.html",
+      "url": "https://edrys-labs.github.io/module-markdown-it/index.html",
       "config": "### Introduction to Arduino and Physical Computing\n**What is Arduino?**\nArduino is a popular open-source platform used for building electronics projects. It consists of both a physical programmable circuit board (often referred to as a microcontroller) and a piece of software, or IDE (Integrated Development Environment), which runs on your computer. You use this software to write and upload computer code to the physical board.\n**What is Physical Computing?**\nPhysical computing involves designing and building interactive physical systems through the use of software and hardware that can sense and respond to the world around them. With Arduino, you can read inputs – light on a sensor, a finger on a button, or a Twitter message – and turn it into an output – activating a motor, turning on an LED, publishing something online. You can tell your board what to do by sending a set of instructions to the microcontroller on the board.\n",
       "studentConfig": "",
       "teacherConfig": "## Welcome for Teachers\n\n> This can be used as a base laboratory to create further and more elaborate labs with [edrys-Lite](https://edrys-labs.github.io).\n> You are currently in the Lobby. If there is a station available you can switch to it and try out the terminal.\n> Otherwise, if you are in teacher-mode you can share a lab by clicking onto `setting` >> `station` and then by clicking the presented link,\n> which is the same as the current link, but only with the word `station` instead of `classroom`.",
@@ -39,7 +39,7 @@
       "height": "huge"
     },
     {
-      "url": "https://raw.githubusercontent.com/cross-lab-project/edrys_module-markdown-it/2.0.0/index.html",
+      "url": "https://raw.githubusercontent.com/edrys-labs/module-markdown-it/2.0.0/index.html",
       "config": "# Arduino Tutorial\n## Step 1: Your First Project - The Blinking LED\n\n**Objective**: To make an LED blink on and off every second.\n\n1. **Program Your Arduino**:\n\n   - Open your Arduino IDE.\n   - Modify your Blockduino, so that it looks like the following code:\n\n     ![Blink example](https://raw.githubusercontent.com/edrys-labs/lab-arduino-basics/main/media/blink.png)\n  \n   - Click on the \"Run Code\" button to send your code to the Arduino.\n\n2. **See the Magic**: Once uploaded, the LED on your breadboard should start blinking.\n\n## Step 2: Adding Serial Communication\n\n**Objective**: To control the LED blinking with a command from your computer.\n\n1. **Modify Your Code**:\n\n    - Add the following to enable serial communication:\n\n       ![Serial Communication](https://raw.githubusercontent.com/edrys-labs/lab-arduino-basics/main/media/serial.png)\n\n2. **Test Your Setup**:\n\n    - Open the Serial Monitor in the Arduino IDE.\n    - Type `1` to turn the LED on and `0` to turn it off.\n\n### Wrap-Up\n\nCongratulations! You have successfully completed the Arduino blink tutorial, mastered basic serial communication. Now, you're ready to explore more complex projects and dive deeper into the world of physical computing!",
       "studentConfig": "",
       "teacherConfig": "",
@@ -49,7 +49,7 @@
       "height": "huge"
     },
     {
-      "url": "https://cross-lab-project.github.io/edrys_module-station-stream/index.html",
+      "url": "https://edrys-labs.github.io/module-station-stream/index.html",
       "stationConfig": {
         "video": true,
         "audio": false
@@ -59,7 +59,7 @@
       "height": "medium"
     },
     {
-      "url": "https://cross-lab-project.github.io/edrys_module-pyxtermjs/index.html",
+      "url": "https://edrys-labs.github.io/module-pyxtermjs/index.html",
       "stationConfig": {
         "server": "http://localhost:5000/pty",
         "execute": "execute",

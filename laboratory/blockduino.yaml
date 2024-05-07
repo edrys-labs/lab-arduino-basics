@@ -21,7 +21,7 @@ members:
   teacher: []
   student: []
 modules:
-  - url: https://cross-lab-project.github.io/edrys_module-markdown-it/index.html
+  - url: https://edrys-labs.github.io/module-markdown-it/index.html
     config: >
       ### Introduction to Arduino and Physical Computing
 
@@ -73,7 +73,7 @@ modules:
     width: full
     height: huge
   - url: >-
-      https://raw.githubusercontent.com/cross-lab-project/edrys_module-markdown-it/2.0.0/index.html
+      https://raw.githubusercontent.com/edrys-labs/module-markdown-it/2.0.0/index.html
     config: >-
       # Arduino Tutorial
 
@@ -239,14 +239,14 @@ modules:
     showInCustom: station
     width: full
     height: huge
-  - url: https://cross-lab-project.github.io/edrys_module-station-stream/index.html
+  - url: https://edrys-labs.github.io/module-station-stream/index.html
     stationConfig:
       video: true
       audio: false
     showInCustom: station
     width: half
     height: medium
-  - url: https://cross-lab-project.github.io/edrys_module-pyxtermjs/index.html
+  - url: https://edrys-labs.github.io/module-pyxtermjs/index.html
     stationConfig:
       server: http://localhost:5000/pty
       execute: execute

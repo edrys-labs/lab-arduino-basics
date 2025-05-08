@@ -21,43 +21,47 @@ members:
   student: []
 modules:
   - url: https://edrys-labs.github.io/module-markdown-it/index.html
-    config: >
-      ### Introduction to Arduino and Physical Computing
+    config:
+      content: >
+        ### Introduction to Arduino and Physical Computing
 
-      **What is Arduino?**
+        **What is Arduino?**
 
-      Arduino is a popular open-source platform used for building electronics
-      projects. It consists of both a physical programmable circuit board (often
-      referred to as a microcontroller) and a piece of software, or IDE
-      (Integrated Development Environment), which runs on your computer. You use
-      this software to write and upload computer code to the physical board.
+        Arduino is a popular open-source platform used for building electronics
+        projects. It consists of both a physical programmable circuit board (often
+        referred to as a microcontroller) and a piece of software, or IDE
+        (Integrated Development Environment), which runs on your computer. You use
+        this software to write and upload computer code to the physical board.
 
-      **What is Physical Computing?**
+        **What is Physical Computing?**
 
-      Physical computing involves designing and building interactive physical
-      systems through the use of software and hardware that can sense and
-      respond to the world around them. With Arduino, you can read inputs –
-      light on a sensor, a finger on a button, or a Twitter message – and turn
-      it into an output – activating a motor, turning on an LED, publishing
-      something online. You can tell your board what to do by sending a set of
-      instructions to the microcontroller on the board.
-    studentConfig: ''
-    teacherConfig: >-
-      ## Welcome for Teachers
+        Physical computing involves designing and building interactive physical
+        systems through the use of software and hardware that can sense and
+        respond to the world around them. With Arduino, you can read inputs –
+        light on a sensor, a finger on a button, or a Twitter message – and turn
+        it into an output – activating a motor, turning on an LED, publishing
+        something online. You can tell your board what to do by sending a set of
+        instructions to the microcontroller on the board.
+    studentConfig:
+      content: ''
+    teacherConfig:
+      content: >-
+        ## Welcome for Teachers
 
 
-      > This can be used as a base laboratory to create further and more
-      elaborate labs with [edrys-Lite](https://edrys-labs.github.io).
+        > This can be used as a base laboratory to create further and more
+        elaborate labs with [edrys-Lite](https://edrys-labs.github.io).
 
-      > You are currently in the Lobby. If there is a station available you can
-      switch to it and try out the terminal.
+        > You are currently in the Lobby. If there is a station available you can
+        switch to it and try out the terminal.
 
-      > Otherwise, if you are in teacher-mode you can share a lab by clicking
-      onto `setting` >> `station` and then by clicking the presented link,
+        > Otherwise, if you are in teacher-mode you can share a lab by clicking
+        onto `setting` >> `station` and then by clicking the presented link,
 
-      > which is the same as the current link, but only with the word `station`
-      instead of `classroom`.
-    stationConfig: ''
+        > which is the same as the current link, but only with the word `station`
+        instead of `classroom`.
+    stationConfig:
+      content: ''
     showInCustom: lobby
     width: full
     height: huge
@@ -107,211 +111,215 @@ modules:
     height: medium
   - url: >-
       https://raw.githubusercontent.com/edrys-labs/module-markdown-it/2.0.0/index.html
-    config: >-
-      # Arduino Tutorial
+    config:
+      content: >-
+        # Arduino Tutorial
 
-      ## Step 1: Your First Project - The Blinking LED
-
-
-      **Objective**: To make an LED blink on and off every second.
+        ## Step 1: Your First Project - The Blinking LED
 
 
-      1. **Build the Circuit**:
-
-         - Plug your Arduino board into your breadboard.
-         - Connect an LED to pin 13 and a ground pin through a 220-ohm resistor (to protect the LED).
-
-      2. **Program Your Arduino**:
-
-         - Open your Arduino IDE.
-         - Copy and paste the following code into the IDE:
-
-           ```cpp
-           void setup() {
-              pinMode(13, OUTPUT); // Set pin 13 as an OUTPUT
-           }
-
-           void loop() {
-             digitalWrite(13, HIGH);   // Turn the LED on
-             delay(1000);              // Wait for a second
-             digitalWrite(13, LOW);    // Turn the LED off
-             delay(1000);              // Wait for a second
-           }
-           ```
-        
-         - Click on the "Run Code" button to send your code to the Arduino.
-
-      3. **See the Magic**: Once uploaded, the LED on your breadboard should
-      start blinking.
+        **Objective**: To make an LED blink on and off every second.
 
 
-      ## Step 2: Adding Serial Communication
+        1. **Build the Circuit**:
 
+           - Plug your Arduino board into your breadboard.
+           - Connect an LED to pin 13 and a ground pin through a 220-ohm resistor (to protect the LED).
 
-      **Objective**: To control the LED blinking with a command from your
-      computer.
+        2. **Program Your Arduino**:
 
-
-      1. **Modify Your Code**:
-
-          - Add the following lines to enable serial communication:
+           - Open your Arduino IDE.
+           - Copy and paste the following code into the IDE:
 
              ```cpp
              void setup() {
-               pinMode(13, OUTPUT);
-               Serial.begin(9600); // Start serial communication at 9600 bps
+                pinMode(13, OUTPUT); // Set pin 13 as an OUTPUT
              }
 
              void loop() {
-               if (Serial.available() > 0) {
-                 int state = Serial.read() - '0'; // Read the incoming byte and subtract '0' to get the integer value
-                 digitalWrite(13, state);
-                 delay(1000);
-               }
+               digitalWrite(13, HIGH);   // Turn the LED on
+               delay(1000);              // Wait for a second
+               digitalWrite(13, LOW);    // Turn the LED off
+               delay(1000);              // Wait for a second
              }
              ```
+          
+           - Click on the "Run Code" button to send your code to the Arduino.
 
-      2. **Test Your Setup**:
-
-          - Open the Serial Monitor in the Arduino IDE.
-          - Type `1` to turn the LED on and `0` to turn it off.
-
-      ## Step 3: Introducing and Fixing a Compile Error
+        3. **See the Magic**: Once uploaded, the LED on your breadboard should
+        start blinking.
 
 
-      **Objective**: To learn how to troubleshoot and fix errors in your code.
+        ## Step 2: Adding Serial Communication
 
 
-      1. **Introduce an Error**:
-
-          - Change `Serial.begin(9600);` to `Serial.beggin(9600);` and try to upload it.
-
-      2. **Identify and Fix the Error**:
-
-          - The Arduino IDE will show an error message indicating that `Serial.beggin` is not a member of 'Serial'.
-          - Correct it to `Serial.begin(9600);` and re-upload the code.
-
-      ### Wrap-Up
-
-      Congratulations! You have successfully completed the Arduino blink
-      tutorial, mastered basic serial communication, and learned to troubleshoot
-      a programming error. Now, you're ready to explore more complex projects
-      and dive deeper into the world of physical computing!
-    studentConfig: ''
-    teacherConfig: ''
-    stationConfig: >-
-      ## Instructions for Station-Sharing 
+        **Objective**: To control the LED blinking with a command from your
+        computer.
 
 
-      You are currently responsible for sharing a station of this lab.
+        1. **Modify Your Code**:
 
-      You have multiple options to share a or your terminal.
+            - Add the following lines to enable serial communication:
 
-      Therefor we use the pyxtermjs - terminal server from:
+               ```cpp
+               void setup() {
+                 pinMode(13, OUTPUT);
+                 Serial.begin(9600); // Start serial communication at 9600 bps
+               }
 
+               void loop() {
+                 if (Serial.available() > 0) {
+                   int state = Serial.read() - '0'; // Read the incoming byte and subtract '0' to get the integer value
+                   digitalWrite(13, state);
+                   delay(1000);
+                 }
+               }
+               ```
 
-      https://github.com/edrys-labs/module-pyxtermjs
+        2. **Test Your Setup**:
 
+            - Open the Serial Monitor in the Arduino IDE.
+            - Type `1` to turn the LED on and `0` to turn it off.
 
-      ### Using Docker
-
-
-      If you haven't done it so far, install
-      [docker](https://docs.docker.com/engine/install/).
-
-      Or, follow one of the instruction-videos for your system:
-
-
-      <details>
-
-      <summary>Install Docker on Linux</summary>  
-
-      <iframe
-        style="width: 100%; aspect-ratio: 16 / 9"
-        src="https://www.youtube.com/embed/cqbh-RneBlk?si=juvUM5d2OSZ28WBv"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen></iframe>
-      </details>
+        ## Step 3: Introducing and Fixing a Compile Error
 
 
-      <details>
-
-      <summary>Install Docker on Windows</summary>
-
-      <iframe
-        style="width: 100%; aspect-ratio: 16 / 9"
-        src="https://www.youtube.com/embed/WDEdRmTCSs8?si=X0agStn1akNcZLGu"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen></iframe>
-      </details>
+        **Objective**: To learn how to troubleshoot and fix errors in your code.
 
 
-      <details>
+        1. **Introduce an Error**:
 
-      <summary>Install Docker on MacOS</summary>
+            - Change `Serial.begin(9600);` to `Serial.beggin(9600);` and try to upload it.
 
-      <iframe
-        style="width: 100%; aspect-ratio: 16 / 9"
-        src="https://www.youtube.com/embed/-EXlfSsP49A?si=OZ_l4_2hDKb6ULQ_"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen></iframe>
-      </details>
+        2. **Identify and Fix the Error**:
 
+            - The Arduino IDE will show an error message indicating that `Serial.beggin` is not a member of 'Serial'.
+            - Correct it to `Serial.begin(9600);` and re-upload the code.
 
-      Then the only thing that is required is to run the following command:
+        ### Wrap-Up
 
-
-      ```bash
-
-      docker run -it -p 5000:5000
-      --device=/dev/ttyACM0:/dev/ttyACM0
-      crosslab/edrys_pyxtermjs_arduino:latest
-
-      ```
+        Congratulations! You have successfully completed the Arduino blink
+        tutorial, mastered basic serial communication, and learned to troubleshoot
+        a programming error. Now, you're ready to explore more complex projects
+        and dive deeper into the world of physical computing!
+    studentConfig:
+      content: ''
+    teacherConfig:
+      content: ''
+    stationConfig:
+      content: >-
+        ## Instructions for Station-Sharing 
 
 
-      This will download the pyxtermjs terminal-server from docker-hub and run
-      it in a secure environment.
+        You are currently responsible for sharing a station of this lab.
 
-      ### Using Python
+        You have multiple options to share a or your terminal.
 
-
-      You can also share your terminal directly via Python, visit the following
-      project
+        Therefor we use the pyxtermjs - terminal server from:
 
 
-      https://github.com/edrys-labs/module-pyxtermjs
+        https://github.com/edrys-labs/module-pyxtermjs
 
 
-      ... the easiest way is to perform the following steps:
+        ### Using Docker
 
 
-      ``` bash
+        If you haven't done it so far, install
+        [docker](https://docs.docker.com/engine/install/).
 
-      # 1. clone the repository or download the folder manually
-
-      git clone https://github.com/edrys-labs/module-pyxtermjs
-
-
-      # 2. install all required sources
-
-      pip3 install -r requirements.txt
+        Or, follow one of the instruction-videos for your system:
 
 
-      # 3. run the terminal-server
+        <details>
 
-      python3 -m pyxtermjs --cors True --command bash --port 5000
+        <summary>Install Docker on Linux</summary>  
 
-      ```
+        <iframe
+          style="width: 100%; aspect-ratio: 16 / 9"
+          src="https://www.youtube.com/embed/cqbh-RneBlk?si=juvUM5d2OSZ28WBv"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+        </details>
+
+
+        <details>
+
+        <summary>Install Docker on Windows</summary>
+
+        <iframe
+          style="width: 100%; aspect-ratio: 16 / 9"
+          src="https://www.youtube.com/embed/WDEdRmTCSs8?si=X0agStn1akNcZLGu"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+        </details>
+
+
+        <details>
+
+        <summary>Install Docker on MacOS</summary>
+
+        <iframe
+          style="width: 100%; aspect-ratio: 16 / 9"
+          src="https://www.youtube.com/embed/-EXlfSsP49A?si=OZ_l4_2hDKb6ULQ_"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+        </details>
+
+
+        Then the only thing that is required is to run the following command:
+
+
+        ```bash
+
+        docker run -it -p 5000:5000
+        --device=/dev/ttyACM0:/dev/ttyACM0
+        crosslab/edrys_pyxtermjs_arduino:latest
+
+        ```
+
+
+        This will download the pyxtermjs terminal-server from docker-hub and run
+        it in a secure environment.
+
+        ### Using Python
+
+
+        You can also share your terminal directly via Python, visit the following
+        project
+
+
+        https://github.com/edrys-labs/module-pyxtermjs
+
+
+        ... the easiest way is to perform the following steps:
+
+
+        ``` bash
+
+        # 1. clone the repository or download the folder manually
+
+        git clone https://github.com/edrys-labs/module-pyxtermjs
+
+
+        # 2. install all required sources
+
+        pip3 install -r requirements.txt
+
+
+        # 3. run the terminal-server
+
+        python3 -m pyxtermjs --cors True --command bash --port 5000
+
+        ```
     showInCustom: station
     width: full
     height: huge

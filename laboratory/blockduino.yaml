@@ -205,7 +205,7 @@ modules:
 
         docker run -it -p 5000:5000
         --device=/dev/ttyACM0:/dev/ttyACM0
-        crosslab/edrys_pyxtermjs_arduino
+        edryslabs/module-pyxtermjs:latest
 
         ```
 
@@ -246,7 +246,7 @@ modules:
     showInCustom: station
     width: full
     height: huge
-  - url: https://edrys-labs.github.io/module-station-stream/index.html
+  - url: https://edrys-labs.github.io/module-streaming/index.html
     stationConfig:
       video: true
       audio: false

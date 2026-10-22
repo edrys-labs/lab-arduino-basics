@@ -65,9 +65,11 @@ modules:
     showInCustom: lobby
     width: full
     height: huge
-  - url: https://edrys-labs.github.io/module-editor/index.html
+  - url: https://edrys-labs.github.io/module-monaco-editor/
     config:
-      editorText: |
+      synchronize: true
+      showLanguageSelector: true
+      value: |
         /*
           Blink
 
@@ -105,7 +107,7 @@ modules:
         }
       runCommand: execute
       language: cpp
-      theme: light
+      theme: vs-light
     showInCustom: station
     width: full
     height: medium

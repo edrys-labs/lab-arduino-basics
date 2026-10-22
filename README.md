@@ -6,12 +6,12 @@ These examples combines:
 
 - editor:
   
-  - [module-editor](https://github.com/edrys-labs/module-editor): Simple minimal and configurable code editor.
+  - [module-monaco-editor](https://github.com/edrys-labs/module-monaco-editor): Collaborative code editor with real-time sync.
   - [module-blockly-duino-v2](https://github.com/edrys-labs/module-blockly-duino-v2): Blockly-Duino2 web-editor.
 
 - [module-markdown-it](https://github.com/edrys-labs/module-markdown-it): Markdown viewer used for documentation.
 - [module-pyxtermjs](https://github.com/edrys-labs/module-pyxtermjs): Terminal Server, this requires a running local server to be able to run the code.
-- [module-station-stream](https://github.com/edrys-labs/module-station-stream): Camera stream viewer via WebRTC.
+- [module-streaming](https://github.com/edrys-labs/module-streaming): Camera stream viewer via WebRTC.
 
 After importing one of the predefined configuration listed below, you have to open a station and start the pyxtermjs server, running on localhost.
 

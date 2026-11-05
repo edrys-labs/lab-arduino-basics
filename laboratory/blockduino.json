@@ -1,14 +1,11 @@
 {
-  "id": "6lx7yWgnHoT5GHq3",
-  "createdBy": "15sg55K8KHkN",
   "dateCreated": 1689064662293,
   "name": "Arduino - Blink (BlockDuino)",
   "meta": {
     "logo": "https://raw.githubusercontent.com/edrys-labs/lab-arduino-basics/main/media/blockduino.jpg",
     "description": "Discover the exciting world of electronics with our Arduino blink tutorial! This beginner-friendly guide is designed for 5th graders and above, introducing students to the basics of programming and physical computing using an Arduino board. Follow step-by-step instructions to create your first LED blink project, learn to communicate with your computer using serial input and output, and solve a coding challenge to reinforce your understanding. Start your journey into the fascinating realm of coding and electronics today!",
     "selfAssign": true,
-    "defaultNumberOfRooms": 0,
-    "id": "79sFHo6ONB1S25cTN7emXmOibQ2HNWb2G9X3Xn2x"
+    "defaultNumberOfRooms": 0
   },
   "members": {
     "teacher": [],

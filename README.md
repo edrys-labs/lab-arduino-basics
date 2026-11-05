@@ -46,10 +46,6 @@ https://raw.githubusercontent.com/edrys-labs/lab-arduino-basics/main/laboratory/
 
 ## Demo
 
-This is a demo of a follow-up laboratory that is based on the Arduino-configuration:
-
-[<img src="https://img.shields.io/badge/%F0%9F%9A%80%20-%20Deploy%20Lab%20-%20light?style=plastic" height="25" />](https://edrys-labs.github.io/?/deploy/https://raw.githubusercontent.com/edrys-labs/lab-arduino-basics/main/lab.yaml)
-
-https://raw.githubusercontent.com/edrys-labs/lab-arduino-basics/main/lab.yaml
+This video shows a follow-up laboratory that was built on the Arduino configuration:
 
 https://github.com/edrys-labs/lab-arduino-basics/assets/3089101/3428fcc9-ce3e-4f99-bb97-e3ae34dd527a

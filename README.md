@@ -46,6 +46,6 @@ https://raw.githubusercontent.com/edrys-labs/lab-arduino-basics/main/laboratory/
 
 ## Demo
 
-This video shows a follow-up laboratory that was built on the Arduino configuration:
+This video shows the Arduino configuration in action: a student opens the station, changes the blink speed, runs the code and watches the Uno react through the station camera.
 
-https://github.com/edrys-labs/lab-arduino-basics/assets/3089101/3428fcc9-ce3e-4f99-bb97-e3ae34dd527a
+https://github.com/user-attachments/assets/3efe5c44-e63a-4cfb-9fa7-e6b284c6d6f4

@@ -34,6 +34,7 @@
       "url": "https://edrys-labs.github.io/module-blockly-duino-v2/index.html",
       "config": {
         "runCommand": "execute",
+        "synchronize": true,
         "board": "arduino_mega"
       },
       "studentConfig": "",
